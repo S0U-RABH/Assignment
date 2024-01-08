@@ -1,0 +1,37 @@
+﻿@model List<Employee>
+
+
+
+
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6"></div>
+            <div class="col-6 text-end">
+            <a asp-action="Create" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Create New Category
+                </a>
+            </div>
+        </div>
+
+        <table id="tblData" class="table table-bordered table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Company</th>
+                    <th>Designation</th>
+                    <th>Degree</th>
+                    <th>Department</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>ShirtSize</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+@section Scripts {
+    <script src="/js/Employee.js"></script>
+}
